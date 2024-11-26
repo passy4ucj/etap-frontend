@@ -47,11 +47,11 @@ function LoginForm(props) {
                 <label
                     htmlFor={loginFormConstants.NAME}
                 >
-                    User Name*
+                    Email*
                 </label>
                 <input
                     id={loginFormConstants.NAME}
-                    placeholder={loginFormConstants.NAME}
+                    placeholder={loginFormConstants.EMAIL}
                     {...register('name', { required: true, maxLength: 30 })}
                     type="text"
                     autoComplete="off"

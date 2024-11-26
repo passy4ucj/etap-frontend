@@ -1,5 +1,6 @@
 export const loginFormConstants = {
     NAME: "Name",
+    EMAIL: "Email",
     PASSWORD: "Password",
     LOG_IN: "Log In",
     SUBMIT_LOGIN: "Login",
