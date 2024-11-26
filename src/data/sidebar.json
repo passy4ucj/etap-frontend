@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Dashboard",
+        "icon": "GiRamProfile",
+        "active": true
+    },
+    {
+        "id": 1,
+        "name": "Users",
+        "icon": "GiFireDash",
+        "active": false
+    },
+    {
+        "id": 2,
+        "name": "Subjects",
+        "icon": "GiFireDash",
+        "active": false
+    },
+    {
+        "id": 3,
+        "name": "Topics",
+        "icon": "GiFireDash",
+        "active": false
+    },
+    {
+        "id": 4,
+        "name": "Progress",
+        "icon": "GiFireDash",
+        "active": false
+    }
+]
