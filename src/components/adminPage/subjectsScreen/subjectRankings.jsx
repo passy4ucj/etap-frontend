@@ -53,7 +53,7 @@ function SubjectRankings(props) {
             </div>
             {subject.map((data) => (
                 <>
-                    <p>User ID : {data.userId}  - Completion : {data.completionRate}</p>
+                    <p>User ID : {data.userId} - Name : {data.name}  - Completion : {data.completionRate}</p>
                 </>
             ))}
         </div>
