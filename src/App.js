@@ -9,6 +9,7 @@ import Users from './components/adminPage/usersScreen/users.jsx';
 import Selects from './components/adminPage/subjectsScreen/subjects.jsx';
 import Topics from './components/adminPage/topicsScreen/topics.jsx';
 import Progress from './components/adminPage/progressScreen/progress.jsx';
+import SubjectRankings from './components/adminPage/subjectsScreen/subjectRankings.jsx';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 
 
@@ -39,6 +40,7 @@ function App(props) {
             <Route path="/adminpage/Subjects" element={<Selects />} />
             <Route path="/adminpage/Topics" element={<Topics />} />
             <Route path="/adminpage/Progress" element={<Progress />} />
+            <Route path="/adminpage/rankings/:id" element={<SubjectRankings />} />
           </Route>
         </Route>
         <Route path="*" element={<h1> Not Found </h1>} />
