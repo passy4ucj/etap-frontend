@@ -26,31 +26,31 @@ export const fetchProgressData = async (pageSize, currentPage, orderBy = "") => 
 
 // Defining Table Header and Binding Data
 export const Columns = [
-    {
-        Header: "Actions",
-        id: "actions",
-        accessor: "actions",
+    // {
+    //     Header: "Actions",
+    //     id: "actions",
+    //     accessor: "actions",
 
-        Cell: (tableProps) => (
-            <span
-                style={{
-                    cursor: "pointer",
-                    color: "blue",
-                    textDecoration: "none"
-                }}
-                onClick={(e) => {
-                    if (window.confirm("Are You Sure ?")) {
-                        // console.log(tableProps.row.original.id, tableProps.state.pageIndex);
-                        // props.onDeleteUser(tableProps.row.original.id, tableProps.state.pageIndex);
+    //     Cell: (tableProps) => (
+    //         <span
+    //             style={{
+    //                 cursor: "pointer",
+    //                 color: "blue",
+    //                 textDecoration: "none"
+    //             }}
+    //             onClick={(e) => {
+    //                 if (window.confirm("Are You Sure ?")) {
+    //                     // console.log(tableProps.row.original.id, tableProps.state.pageIndex);
+    //                     // props.onDeleteUser(tableProps.row.original.id, tableProps.state.pageIndex);
 
-                    }
+    //                 }
 
-                }}
-            >
-                Delete
-            </span>
-        )
-    },
+    //             }}
+    //         >
+    //             Delete
+    //         </span>
+    //     )
+    // },
     {
         Header: "Subject",
         accessor: "subjectId",

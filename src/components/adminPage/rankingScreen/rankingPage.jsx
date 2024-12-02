@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
-import SubjectInputModal from "./tableOperation/subjectAddModal";
+import { toast } from 'react-toastify';
 import * as actionTypes from "../../../store/actions/actionTypes";
-import * as tableProps from "./subjectsTableData";
-import Table from "../../shared/unixForTable/table";
 import * as loginTokenConstants from "../../../constants/shared/loginTokenConstants";
 import { baseUrl } from "../../../constants/shared/baseUrl"
 
 
 
-function SubjectRankings(props) {
+function RankingScreen(props) {
     const [modalState, setModalState] = useState(false);
     const [spinner, setSpinner] = useState(false);
-    const [subject, setSubject] = useState();
+    const [subject, setSubject] = useState([]);
     const { id } = useParams();
     console.log(id);
     const subjectId = id;
@@ -37,7 +33,7 @@ function SubjectRankings(props) {
 
             console.log('YES', res.data.data)
 
-            setSubject(res.data.data || null); // Assuming the response contains a `subjects` array
+            setSubject(res.data.data || []); // Assuming the response contains a `subjects` array
         } catch (error) {
             console.error("Error fetching subject rankings:", error);
             toast("Failed to fetch subject rankings.");
@@ -89,4 +85,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 // export default connect(mapStateToProps, mapDispatchToProps)(SubjectRankings);
-export default SubjectRankings
+export default RankingScreen
